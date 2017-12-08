@@ -16,6 +16,7 @@ Contents:
    contributing
    01_intro
    02_opensource
+   03_hello
 
 
 Indices and tables

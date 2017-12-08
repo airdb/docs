@@ -1,12 +1,12 @@
-contributing
+Contributing
 ========
-
-$project 分享出一些经常我们使用到的开源技术或软件。
 
 如何参与贡献?:
 
     Github 提交 PR, 地址: github.com/airdb/docs
+
     Github 提交 issues, 地址: github.com/airdb/docs/issues
+
     写邮件给 info@airdb.com
 
 Github 如何提交 PR？
