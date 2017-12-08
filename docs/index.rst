@@ -12,7 +12,8 @@ Contents:
    :maxdepth: 2
    :glob:
 
-   *
+   authors
+   01_intro
 
 
 
@@ -22,4 +23,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
