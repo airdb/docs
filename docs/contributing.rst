@@ -39,27 +39,3 @@ Github 如何提交 PR？
 - step 8
   发起PR(Pull Request)
   登录 GitHub Repository 点击Pull Requests, 再点击New pull requests按钮
- 
-
---------
-
-- docker
-- github
-- Jenkins
-- travis-ci (推荐)
-
-docker image
-------------
-
-airdb/alpine
-
-
-----------
-
-- Issue Tracker: github.com/$project/$project/issues
-- Source Code: github.com/$project/$project
-
-文档
--------
-
-- readthedocs
