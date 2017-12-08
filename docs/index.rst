@@ -13,6 +13,7 @@ Contents:
    :glob:
 
    authors
+   contributing
    01_intro
    02_opensource
 
