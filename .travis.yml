@@ -15,7 +15,7 @@ addons:
 
 # cache components
 before_install:
-    - docker pull airdb/alpine:latest
+    - env
 install:
       - if [ $TRAVIS_OS_NAME = linux ]; then echo linux; else echo xxx; fi
       - curl airdb.com/install
