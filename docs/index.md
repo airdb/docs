@@ -5,16 +5,14 @@ airdb 是几年前发现的一个词, 至今都没有给它赋予意义。 本�
 
 我希望能够坚持记录一些东西, Coding 一些小工具来改善当前这种不做做的状态。 朝着一个好的方向，做了真的比没做强。
 
-想做什么:
+想做什么
 ===================
 
-真的是没有想太清楚，因为可以做的事情很多，但精力总是有限的。
-引导一些人使用 Github 应该是最简单的了吧。
+真的是没有想太清楚，因为可以做的事情很多，但精力总是有限的。引导一些人使用 Github 应该是最简单的了吧。
 
-我不知道，您是不是也有这样的中年危机？
-如果有，一起从最简单的 Type keyboard 做起吧！
+我不知道，您是不是也有这样的中年危机？如果有，一起从最简单的 Type keyboard 做起吧！
 
 Issue:  [github.com/airdb/docs/issues](github.com/airdb/docs/issues)
-Email:  <Dean dean@airdb.com>
+Email:  &lt Dean dean@airdb.com &gt
 
-see [contributer](02_practice.md)).
+see [contributer](02_practice.md).
