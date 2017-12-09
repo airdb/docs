@@ -1,6 +1,6 @@
 site_name: airdb
 theme: readthedocs
 pages:
-- Overview: README.md
+- Overview: index.md
 - 开源软件: 01_opensource.md
 - 实践: 02_practice.md
