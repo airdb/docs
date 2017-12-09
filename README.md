@@ -8,4 +8,3 @@ Overview
 
     本项目是。。。
 
-(see [contributer](AUTHORS.md)).
