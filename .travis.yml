@@ -31,12 +31,14 @@ before_deploy:
     - curl airdb.com/before_deploy
 deploy:
     provider: s3
-    access_key_id: "AWS_ACCESS_KEY_ID"
-    secret_access_key: "AWS_SECRET_KEY"
-    bucket: "BUCKET" 
+    access_key_id: $AWS_ACCESS_KEY_ID
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: $BUCKET
     local_dir: "docs"
     upload-dir: "docs"
     default_text_charset: 'utf-8'
+    on:
+        branch: master
     - curl airdb.com/deploy
 after_deploy:
     - curl airdb.com/after_deploy

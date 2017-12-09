@@ -1,6 +1,7 @@
 Airdb Docs
 ========================
 
+[![Build Status](https://travis-ci.org/airdb/docs.svg?branch=master)](https://travis-ci.org/airdb/docs.svg?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/airdb/badge/?version=latest)](http://airdb.readthedocs.io/zh/latest/?badge=latest)
 
 Into
