@@ -14,4 +14,4 @@ airdb 是几年前发现的一个词, 至今都没有给它赋予意义。 本�
 
 邮件 <Dean dean@airdb.com>  或点击 [Issues](github.com/airdb/docs/issues) 提问。
 
-see [contributer](02_practice.md).
+see [contributing](03_how_to_github_pull_request.md).
