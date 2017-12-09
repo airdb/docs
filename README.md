@@ -1,7 +1,7 @@
 Airdb Docs
 ========================
 
-|build-status| |docs|
+[![Documentation Status](https://readthedocs.org/projects/airdb/badge/?version=latest)](http://airdb.readthedocs.io/zh/latest/?badge=latest)
 
 Into
 -------
