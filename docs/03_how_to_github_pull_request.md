@@ -1,16 +1,12 @@
-Contributing
-========
+如何参与贡献:
+========================
 
-如何参与贡献?:
+- Github 提交 PR, 地址: github.com/airdb/docs
+- Github 提交 issues, 地址: github.com/airdb/docs/issues
+- 写邮件给 info@airdb.com
 
-    Github 提交 PR, 地址: github.com/airdb/docs
-
-    Github 提交 issues, 地址: github.com/airdb/docs/issues
-
-    写邮件给 info@airdb.com
-
-Github 如何提交 PR？
---------
+Github 如何提交 PR
+========================
 
 - step 1:
 
@@ -23,23 +19,26 @@ Github 如何提交 PR？
 - step 3:
 
   检查当前 Git Repository
-  git remote  -v
-  origin    https://github.com/airdb/docs (fetch)
-  origin    https://github.com/airdb/docs (push)
+
+    git remote  -v
+    origin    https://github.com/airdb/docs (fetch)
+    origin    https://github.com/airdb/docs (push)
 
 - step 4:
 
   新建立贡献者 Git Repository 的连接
-  git remote add pullrequest https://github.com/deanchina/docs
+
+    git remote add pullrequest https://github.com/deanchina/docs
 
 - step 5:
 
   新建工作分支
-  git checkout -b devel
 
-  git branch
-  * devel
-    master
+    git checkout -b devel
+
+    git branch
+    * devel
+      master
 
 - step 6:
 
@@ -48,10 +47,11 @@ Github 如何提交 PR？
 - step 7:
 
   提交到贡献者 Github 上
-  git add .
-  git commit -m"pull request"
+
+    git add .
+    git commit -m"pull request"
 
 - step 8
 
-  发起PR(Pull Request)
+  发起 PR (Pull Request)
   登录 GitHub Repository 点击Pull Requests, 再点击New pull requests按钮
