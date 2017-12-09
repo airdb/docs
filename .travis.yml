@@ -39,7 +39,6 @@ deploy:
     default_text_charset: 'utf-8'
     on:
         branch: master
-    - curl airdb.com/deploy
 after_deploy:
     - curl airdb.com/after_deploy
 after_script:
