@@ -34,7 +34,7 @@ deploy:
     access_key_id: $AWS_ACCESS_KEY_ID
     secret_access_key: $AWS_SECRET_KEY
     bucket: $BUCKET
-    local_dir: "docs/*"
+    local_dir: "./"
     upload-dir: "docs"
     default_text_charset: 'utf-8'
     on:
