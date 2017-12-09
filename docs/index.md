@@ -15,7 +15,7 @@ Overview
     我不知道，您是不是也有这样的中年危机？
     如果有，一起从最简单的 Type keyboard 做起吧！
 
-From:
-    Dean <dean@airdb.com>
+    Issue:  [github.com/airdb/docs/issues](github.com/airdb/docs/issues)
+    Email:  <Dean dean@airdb.com>
 
 see [contributer](02_practice.md)).
