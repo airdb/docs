@@ -1,0 +1,6 @@
+site_name: airdb
+theme: readthedocs
+pages:
+- Overview: index.md
+- Model: 01_model.md
+- 开源软件: 02_opensource.md

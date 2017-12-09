@@ -1,0 +1,17 @@
+notifications:
+    email:
+        - dean@airdb.com
+dist: trusty
+
+before_install:
+    - 
+install:
+      - if [ $TRAVIS_OS_NAME = linux ]; then echo linux; env ; else echo xxx; fi
+after_success:
+    - curl -d "msg=Auto ci success. https://travis-ci.org/airdb/docs" http://airdb.com:9090/tarvis-ci/callback
+after_failure:
+    - curl airdb.com/after_failure
+before_deploy:
+    - curl airdb.com/before_deploy
+after_script:
+    - curl airdb.com/after_scritp
