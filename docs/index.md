@@ -12,6 +12,6 @@ airdb 是几年前发现的一个词, 至今都没有给它赋予意义。 本�
 
 我不知道，您是不是也有这样的中年危机？如果有，一起从最简单的 Type keyboard 做起吧！
 
-邮件 <Dean dean@airdb.com>  或点击 [Issues](github.com/airdb/docs/issues) 提问。
+邮件 &lt; Dean dean@airdb.com &gt;  或点击 [Issues](github.com/airdb/docs/issues) 提问。
 
 see [contributing](03_how_to_github_pull_request.md).
