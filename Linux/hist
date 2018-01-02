@@ -1,0 +1,1000 @@
+   32  yum install vim 
+   33  ls
+   34  yum install vim  -y
+   35  ls
+   36  cd
+   37  ls
+   38  yum install docker
+   39  yum install git
+   40  yum install http
+   41  yum install httpd
+   42  yum install gcc g++
+   43  history 
+   44  vim /etc/sysconfig/network
+   45  df
+   46  ls
+   47  pwd
+   48  ls
+   49  uptime 
+   50  ls
+   51  df
+   52  ls
+   53  df
+   54  ls
+   55  df -h
+   56  free  -g
+   57  cat /home/zhanglei19/.bashrc 
+   58  ls
+   59  useradd  work
+   60  passwd  work
+   61  vi /etc/hostname 
+   62  vim /etc/sysconfig/network
+   63  df
+   64  cd /home/
+   65  ll
+   66  mkdir iso
+   67  cd iso/
+   68  wget http://10.81.0.21:9999/iso/CentOS-7.0-1406-x86_64-DVD.iso
+   69  df
+   70  mkdir /mnt/cdrom
+   71  mount -o loo CentOS-7.0-1406-x86_64-DVD.iso /mnt/cdrom/
+   72  mount -o loop CentOS-7.0-1406-x86_64-DVD.iso /mnt/cdrom/
+   73  cd /etc/yum.repos.d/
+   74  ls
+   75  mkdir bak
+   76  mv *.repo bak/
+   77  vim yum.repo
+   78  rpm --import /mnt/cdrom/RPM-GPG-KEY-CentOS-7 
+   79  cd
+   80  ifconfig 
+   81  route -n
+   82  dmesg | grep eth
+   83  route -n
+   84  ifconfig 
+   85  ifconfig | grep 10.26.201.31
+   86  ip addr show
+   87  vim /etc/sysconfig/network-scripts/ifcfg-enp11s0f1
+   88  vim /etc/sysconfig/static-routes
+   89  ifconfig 
+   90  ip addr show
+   91  /etc/init.d/network restart
+   92  systemctl status network.service
+   93  journalctl -xn
+   94  route -n
+   95  cat /etc/resolv.conf 
+   96  ping www.google.com
+   97  ping 8.8.8.8
+   98  ping www.apple.com
+   99  ping 23.32.254.183
+  100  yum install traceroute
+  101  traceroute 23.32.254.183
+  102  df
+  103  systemctl
+  104  ifconfig 
+  105  ps aux | grep dhc
+  106  kill 17881
+  107  systemctl 
+  108  systemctl stop NetworkManager.service
+  109  ifconfig 
+  110  ifconfig enp11s0f1 10.26.201.31 netmask 255.255.255.0
+  111  ls
+  112  less /var/log/messages 
+  113  df
+  114  ls
+  115  wget dl.noah.baidu.com/client/release
+  116  ls
+  117  ping baidu.com
+  118  ls
+  119  route -n
+  120  ls
+  121  yum install net-tool
+  122  yum install nettool
+  123  history 
+  124  cd /home/work/
+  125  ls
+  126  git clone github.com/Deanchina/Dean.git
+  127  git clone https://github.com/DeanChina/Dean.git
+  128  ls
+  129  route -n
+  130  cd /etc/sysconfig/
+  131  ls
+  132  vim static-routes 
+  133  service  network restart
+  134  /etc/init.d/network restart
+  135  yum install net-tools
+  136  ls
+  137  vim /etc/sysconfig/network
+  138  vim /etc/resolv.conf 
+  139  ls
+  140  yum install net-tools
+  141  route -n
+  142  route add default gw 10.26.201.1
+  143  df
+  144  ping baidu.com
+  145  route -n
+  146  route del 10.26.201.0/24 gw 0.0.0.0
+  147  route -n
+  148  ping baidu.com
+  149  route -n
+  150  w
+  151  ls
+  152  df
+  153  cd /sys/fs/cgroup/
+  154  ls
+  155  yum install curl
+  156  route -n
+  157  ping baidu.com
+  158  ifconfig 
+  159  history 
+  160  w
+  161  ls
+  162  cd
+  163  ls
+  164  wget dl.noah.baidu.com/client-release/install.sh
+  165  yum install wget
+  166  wget dl.noah.baidu.com/client-release/install.sh
+  167  sh install.sh 
+  168  yum install pstree work
+  169  yum install pstree 
+  170  yum install ps 
+  171  yum install psmisc
+  172  ls
+  173  sh install.sh 
+  174  ls
+  175  ps aux | grep noah-age
+  176  ls
+  177  df
+  178  gcc 
+  179  gcc --verison
+  180  gcc -V
+  181  gcc
+  182  gcc ++
+  183  gcc -h
+  184  man gcc
+  185  gcc +
+  186  gcc --verison
+  187  gcc
+  188  gcc --version
+  189  ls
+  190  route -n
+  191  ping baidu.com
+  192  ls
+  193  cd /etc/sysconfig/
+  194  ls
+  195  w
+  196  ls
+  197  cd network-scripts/
+  198  ls
+  199  ll -l
+  200  vim ifcfg-enp11s0f1 
+  201  ls
+  202  hostname -i
+  203  grep 10.26.201 * 
+  204  ls
+  205  df
+  206  cd ..
+  207  df
+  208  man systemctl
+  209  ls
+  210  history 
+  211  history  | grep yum
+  212  yum install vim docker git httpd gcc  g++ net-tools curl wget psmisc lftp -y
+  213  python
+  214  man systemctl
+  215  df
+  216  ls
+  217  cd
+  218  ls
+  219  sh  install.sh 
+  220  ping baidu.com
+  221  hostname -i
+  222  hostname
+  223  passwd 
+  224  ls
+  225  less anaconda-ks.cfg 
+  226  ls
+  227  cd
+  228  ls
+  229  w
+  230  history 
+  231  yum -y install vim docker git httpd gcc  g++ net-tools curl wget psmisc lftp tmux
+  232  tmux 
+  233  ifconfig 
+  234  dmesg 
+  235  route -n
+  236  history 
+  237  iftop
+  238   yum -y install vim docker git httpd gcc  g++ net-tools curl wget psmisc lftp tmux iftop
+  239  iftop
+  240   yum -y install vim docker git httpd gcc  g++ net-tools curl wget psmisc lftp tmux iftop
+  241  g++
+  242  c++
+  243   yum -y install vim docker git httpd gcc  c++ net-tools curl wget psmisc lftp tmux iftop
+  244  g++
+  245   yum -y install vim docker git httpd gcc gcc-c++ net-tools curl wget psmisc lftp tmux iftop
+  246   yum -y install vim docker git httpd gcc gcc-c++ net-tools curl wget psmisc lftp tmux 
+  247   yum -y install vim docker git httpd gcc gcc-c++ net-tools curl wget psmisc lftp tmux  
+  248  ifconfig 
+  249  route -n
+  250  ping baidu.com
+  251  iptables status
+  252  iptables -L
+  253  ping baidu.com,
+  254  ping baidu.com
+  255  iptables -F
+  256  ping baidu.com
+  257  df
+  258  ping baidu.com
+  259  df
+  260  df -h
+  261  ls
+  262  pwd
+  263  ls
+  264   yum -y install vim docker git svn httpd gcc gcc-c++ net-tools curl wget psmisc lftp tmux  
+  265  ls
+  266  df
+  267  ifconfig 
+  268  ping www.baidu.com
+  269  ping www.apple.com
+  270  route -n
+  271  cat /etc/sysconfig/network-scripts/ifcfg-enp11s0f1
+  272  vim /etc/sysconfig/network-scripts/ifcfg-enp11s0f0
+  273  ifconfig 
+  274  ip addr show
+  275  ip addr enp11s0f1 show
+  276  ip addr show enp11s0f1
+  277  df
+  278  ls
+  279  cd /home/
+  280  ls
+  281  cd zhanglei19/
+  282  llllllls
+  283  ls
+  284  df
+  285  ping baidu.com
+  286  route -n
+  287  ls
+  288  /etc/init.d/network start
+  289  ls
+  290  ifconfig
+  291  ip
+  292  ip addr
+  293  ls
+  294  cd /etc/sysconfig/network-scripts/
+  295  ls
+  296  vim ifcfg-enp11s0f1
+  297  vi ifcfg-enp11s0f1
+  298  setup
+  299  set
+  300  setup
+  301  ls
+  302  vim ifcfg-enp11s0f1 
+  303  cp ifcfg-enp11s0f1 ifcfg-enp11s0f1.20140724
+  304  vi ifcfg-enp11s0f1
+  305  service network restart
+  306  ip addr
+  307  route-
+  308  route -n
+  309  pinggggggg 10.26.201.31
+  310  ping 10.26.201.31
+  311  vim ifcfg-enp11s0f1
+  312  vi ifcfg-enp11s0f1
+  313  pwd
+  314  cd ..
+  315  ls
+  316  vim static-routes
+  317  vi static-routes
+  318  service network restart
+  319  ip addr
+  320  ping 10.26.201.1
+  321  df
+  322  ifco
+  323  ip
+  324  ip addr
+  325  ls
+  326  vim static-routes 
+  327  ip 
+  328  ip  route
+  329  cd ne
+  330  ls
+  331  cd network-scripts/
+  332  ls
+  333  diff ifcfg-enp11s0f0 
+  334  ping 10.10.10.10
+  335  ls
+  336  diff ifcfg-enp11s0f0 ifcfg-enp11s0f1
+  337  ls
+  338  vim ifcfg-enp11s0f0 
+  339  vi ifcfg-enp11s0f0
+  340  ls
+  341  resert
+  342  reset
+  343  ls
+  344  mv ifcfg-enp11s0f1.20140724  ifcfg-enp11s0f1
+  345  vim ifcfg-enp11s0f1
+  346  vi ifcfg-enp11s0f1
+  347  service network restart
+  348  vi ifcfg-enp11s0f1
+  349  service network restart
+  350  vi ifcfg-enp11s0f0
+  351  service network restart
+  352  systemctl  status network
+  353  systemctl  status network.service
+  354  service network stop
+  355  service network start
+  356  ls
+  357  vim ifcfg-enp11s0f0 
+  358  vi ifcfg-enp11s0f0 
+  359  ls
+  360  cat ifcfg-
+  361  passwd  
+  362  fdisk -l
+  363  parted -l
+  364  dmesg | grep eth
+  365  cd /etc/udev/rules.d/
+  366  ls
+  367  ethtool enp11s0f0
+  368  ethtool enp11s0f1
+  369  ip show
+  370  ip addr show
+  371  ip addr add 10.26.201.31 255.255.255.0 dev enp0s0
+  372  ip addr add 10.26.201.31 255.255.255.0 dev enp11s0f1
+  373  ip addr add 10.26.201.31 dev enp11s0f1
+  374  ip addr show
+  375  route -n
+  376  ifconfig 
+  377  systemctl restart network.service
+  378  ifconfig 
+  379  route -n
+  380  su - work
+  381  ls
+  382  cd /etc/sysconfig/network-scripts/
+  383  ls
+  384  vim ifcfg-enp11s0f1 
+  385  su - work
+  386  history 
+  387  su - work
+  388  ls
+  389  vim /etc/init.d/network 
+  390  df
+  391  ls
+  392  history 
+  393  df
+  394  ls
+  395  cd /etc/yum.repos.d/
+  396  ls
+  397  vim yum.repo 
+  398  df
+  399  umount  /dev/loop0 
+  400  df
+  401  ls
+  402  cat yum.repo 
+  403  rm yum.repo  -rf
+  404  ls
+  405  mv bak/* .
+  406  ls
+  407  rm bak/ -rf
+  408  ls
+  409  vim CentOS-
+  410  vim CentOS-Base.repo 
+  411  ls
+  412  mkdir bck
+  413  cp CentOS-Base.repo  bck/
+  414  ls
+  415  rpm -qf CentOS-Base.repo 
+  416  yum reinstall centos-release
+  417  kls
+  418  ls
+  419  vim CentOS-Base.repo 
+  420  rm CentOS-Base.repo  -rf
+  421  yum reinstall centos-release
+  422  ls
+  423  cp bck/CentOS-Base.repo  .
+  424  ls
+  425  df
+  426  history 
+  427  mount /dev/loop0  /mnt/
+  428  df 
+  429  mount /dev/loop0  /mnt/ -oloop
+  430  ls
+  431  history 
+  432  ls
+  433  rm CentOS-Base.repo  -rf
+  434  ls
+  435  rpm -ivh http://yum.noah.baidu.com/centos/7/os/x86_64/Packages/centos-release-7-0.1406.el7.centos.2.3.x86_64.rpm
+  436  rpm -ivh http://yum.noah.baidu.com/centos/7/os/x86_64/Packages/centos-release-7-0.1406.el7.centos.2.3.x86_64.rpm --force
+  437  ls
+  438  vim CentOS-Base.repo 
+  439  ls
+  440  cp bck/CentOS-Base.repo  .
+  441  ls
+  442  ifconfig 
+  443  w
+  444  ls
+  445  cd
+  446  ls
+  447  su - work
+  448  ls
+  449  sudo yum install automake libtool flex bison pkgconfig gcc-c++
+  450  curl ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/monkeyiq:/centos6updates/CentOS_CentOS-6/noarch/autoconf-2.69-12.2.noarch.rpm > autoconf-2.69-12.2.noarch.rpm
+  451  wget ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/monkeyiq:/centos6updates/CentOS_CentOS-6/noarch/autoconf-2.69-12.2.noarch.rpm
+  452  ls
+  453  rm autoconf-2.69-12.2.noarch.rpm  -f
+  454  wget ftp://ftp.pbone.net/mirror/ftp5.gwdg.de/pub/opensuse/repositories/home:/monkeyiq:/centos6updates/CentOS_CentOS-6/noarch/autoconf-2.69-12.2.noarch.rpm
+  455  ls
+  456  rpm -vih autoconf-2.69-12.2.noarch.rpm 
+  457  yum install autoconf-2.69-12.2.noarch.rpm 
+  458  git clone https://git-wip-us.apache.org/repos/asf/thrift.git
+  459  LS
+  460  ls
+  461  cd thrift/
+  462  ls
+  463  ./bootstrap.sh 
+  464  ./configure --enable-libs=no
+  465  ./bootstrap.sh 
+  466  make 
+  467  ./configure --enable-libs=no
+  468  make
+  469  ls
+  470  sudo make install
+  471  ls
+  472  which thrift 
+  473  thrift -r --gen py tutorial.thrift
+  474  cd ..
+  475  ls
+  476  vim a.py
+  477  python a.py 
+  478  ls
+  479  vim a.py 
+  480  ls thrift/lib/py/build/lib.*
+  481  thrift -r --gen py tutorial.thrift
+  482  ls
+  483  cd thrift/
+  484  ls
+  485  thrift -r --gen py tutorial.thrift
+  486  ls
+  487  history 
+  488  \
+  489  ./configure
+  490  make
+  491  yum install lua
+  492  yum install lua -y
+  493  yum install lua-devel -y
+  494  ./configure
+  495  ls
+  496  make install
+  497  ls
+  498  cd ..
+  499  ls
+  500  cd thrift/
+  501  ls
+  502  cd lbi
+  503  ls
+  504  cd lbi
+  505  ls
+  506  cd lib
+  507  ls
+  508  cd py/
+  509  ls
+  510  python setup.py  install
+  511  cd ..
+  512  ls
+  513  cd ..
+  514  ls
+  515  cd ..
+  516  ls
+  517  python a.py 
+  518  cd thrift/
+  519  ls
+  520  cd cde lib
+  521  ls
+  522  cd  lib
+  523  ls
+  524  cd py
+  525  ls
+  526  pwd
+  527  cd ..
+  528  ls
+  529  cd ..
+  530  ls
+  531  cd ..
+  532  ls
+  533  pwd
+  534  vim a.py 
+  535  python a.py 
+  536  vim a.py 
+  537  ls
+  538  thrift --gen py aa.thrift
+  539  ls
+  540  cd thrift/
+  541  ls
+  542  find . -name  thrift*
+  543  find . -name  thrift
+  544  find . -name  thrift| grep bin
+  545  ls
+  546  thrift  
+  547  thrift  --help
+  548  thrift  py
+  549  thrift  gen
+  550  ks
+  551  ls
+  552  vim Makefile
+  553  make uninstall
+  554  ls
+  555  wget ftp://getprod:getprod@product.scm.baidu.com:/data/prod-64/inf/cos/matrix/matrix-admin/matrix-admin_2-1-1-1235_PD_BL/output/matrix-admin.tgz
+  556  ls
+  557  tar xzf matrix-admin.tgz 
+  558  ls
+  559  cd matrix-admin.tgz 
+  560  ls
+  561  cd protocol/
+  562  ls
+  563  vim common.thrift 
+  564  ls
+  565  vim MasterAdminProtocol.thrift 
+  566  ls
+  567  cd ..
+  568  ls
+  569  vim install.sh 
+  570  ls
+  571  rm admin.py  gen-py -rf
+  572  ls
+  573  rm protocol/ -rf
+  574  ls
+  575  lftp ftp://getprod:getprod@product.scm.baidu.com:/data/prod-64/inf/cos/matrix/matrix-client
+  576  ls
+  577  mv client.tgz matrix-client.2-1-6.tgz
+  578  ls
+  579  sz 
+  580  yum install sz
+  581  yum install lsz
+  582  yum install srz
+  583  yum provides *bin/sz
+  584  yum install lrzsz
+  585  ls
+  586  mv matrix-admin.tgz  matrix-admin_2-1-11-2511.tgz 
+  587  sz -be matrix-admin_2-1-11-2511.tgz 
+  588  ls
+  589  sz -be matrix-client.2-1-6.tgz 
+  590  ls
+  591  history 
+  592  su - work
+  593  ls
+  594  sz matrix-admin_2-1-11-2511.tgz 
+  595  ls
+  596  sz matrix-client.2-1-6.tgz 
+  597  lftp ftp://getprod:getprod@product.scm.baidu.com:/data/prod-64/inf/cos/matrix/matrix-agent
+  598  ls
+  599  mv matrix.tgz matrix_agent_2-1-9.tgz
+  600  ll
+  601  tar tzf matrix_agent_2-1-9.tgz
+  602  ll
+  603  sz  matrix_agent_2-1-9.tgz
+  604  ll
+  605  cd thrift/
+  606  ll
+  607  cd tutorial/
+  608  ll
+  609  vim shared.thrift 
+  610  ll
+  611  vim tutorial.thrift
+  612  ls
+  613  cd ..
+  614  ls
+  615  cd /etc/system
+  616  ls
+  617  cd /etc/systemd/
+  618  ls
+  619  less bootchart.conf 
+  620  ls
+  621  cat ls
+  622  cat bootchart.conf 
+  623  ls
+  624  vim system.conf 
+  625  ls
+  626  vim journald.conf 
+  627  ls
+  628  vim user.conf 
+  629  ls
+  630  cd user
+  631  ls
+  632  cd ..
+  633  ls
+  634  vim /etc/passwd
+  635  visudo 
+  636  su - work
+  637  ls
+  638  cd
+  639  ls
+  640  cd thrift/
+  641  ls
+  642  make install
+  643  ls
+  644  ./configure --enable-libs=no  && make 
+  645  vim ../tutorial/tutorial.thrift
+  646  vim tutorial/tutorial.thrift 
+  647  ls
+  648  vim tutorial/tutorial.thrift
+  649  ls
+  650  compiler/cpp/thrift --gen html -r tutorial/tutorial.thrift
+  651  cd gen-html/
+  652  ls
+  653  vim index.html 
+  654  ls
+  655  vim shared.html 
+  656  ls
+  657  vim tutorial.html 
+  658  ls
+  659  cd ..
+  660  ls
+  661  compiler/cpp/thrift --gen python -r tutorial/tutorial.thrift
+  662  compiler/cpp/thrift --gen py -r tutorial/tutorial.thrift
+  663  ls
+  664  cd gen-py/
+  665  ls
+  666  vim tutorial/
+  667  ls
+  668  cd shared/
+  669  ls
+  670  vim SharedService
+  671  vim SharedService.py 
+  672  ls
+  673  vim ttypes.py 
+  674  ls
+  675  cd ..
+  676  ls
+  677  cd ..
+  678  ls
+  679  vim a.thrift
+  680  ls
+  681  cd ..
+  682  cp thrift/ thrift.20140724 -r
+  683  ls
+  684  cd thrift
+  685  ls
+  686  vim a.thrift
+  687  ls
+  688  compiler/cpp/thrift -gen py a.thrift 
+  689  vim a.thrift 
+  690  compiler/cpp/thrift -gen py a.thrift 
+  691  cd gen-py/
+  692  ls
+  693  cd a/
+  694  ls
+  695  vim UserServer.py 
+  696  ls
+  697  vim ttypes.py 
+  698  ls
+  699  cd ..
+  700  ls
+  701  cd ..
+  702  ls
+  703  cd lib/py/
+  704  ls
+  705  cd ..
+  706  ls
+  707  cd ..
+  708  ls
+  709  cd gen-py/
+  710  ;ls
+  711  ls
+  712  cd ..
+  713  ls
+  714  rm gen-py/ -rf
+  715  ls
+  716  vim a.thrift 
+  717  ls
+  718  history 
+  719  compiler/cpp/thrift  -gen py a.thrift 
+  720  cd gen-py/
+  721  ls
+  722  cd a/
+  723  ls
+  724  vim UserServer-remote 
+  725  ls
+  726  vim UserServer
+  727  vim UserServer.py 
+  728  ls
+  729  cd ..
+  730  ls
+  731  cd ..
+  732  ls
+  733  vim a_server.py
+  734  pwd
+  735  ls
+  736  vim a.thrift 
+  737  ls
+  738  vim a_server.py 
+  739  ls
+  740  vim a_server.py 
+  741  vim gen-py/a/UserServer.py 
+  742  ls
+  743  vim gen-py/a/UserServer.py 
+  744  ls
+  745  vim a_server.py 
+  746  vim gen-py/a/UserServer.py 
+  747  ls
+  748  vim a_server.py 
+  749  vim gen-py/a/UserServer.py 
+  750  vim a_server.py 
+  751  python a_server.py 
+  752  vim a_server.py 
+  753  python a_server.py 
+  754  vim a_server.py 
+  755  python a_server.py 
+  756  cat a_server.py
+  757  vim a_server.py
+  758  python a_server.py 
+  759  ls
+  760  vim a_server.py 
+  761  ls
+  762  vim a.thrift 
+  763  vim a_server.py 
+  764  vim a.thrift 
+  765  vim a_server.py 
+  766  python a_server.py 
+  767  vim a_server.py 
+  768  vim gen-py/a/ttypes.py
+  769  vim a_server.py 
+  770  vim gen-py/a/ttypes.py
+  771  vim a_server.py 
+  772  python a_server.py 
+  773  ls
+  774  vim thrift.bin 
+  775  ls
+  776  vim a_server.py 
+  777  cat a_client.py 
+  778  vim a_server.py 
+  779  cat a_client.py 
+  780  vim a_t
+  781  vim a_server.py 
+  782  python a_server.py 
+  783  vim a_server.py 
+  784  python a_server.py 
+  785  vim a_server.py 
+  786  python a_server.py 
+  787  vim a_server.py 
+  788  ls
+  789  vim a_server.py 
+  790  python a_server.py 
+  791  vim a_server.py 
+  792  ls
+  793  mail -s "aa" a.thrift 
+  794  mail -s "aa" < a.thrift 
+  795  mail -s "aa" < a.thrift 
+  796  mail -s "aa"  zhanglei19@baidu.com < a.thrift 
+  797  echo $?
+  798  cd thrift
+  799  ls
+  800  cd a_client.py
+  801  vim a_client.py
+  802  python a_client.py 
+  803  ls
+  804  vim a_client.py 
+  805  vim a_client.py  +39
+  806  python a_client.py 
+  807  vim a.thrift 
+  808  vim a_client.py 
+  809  python a_client.py 
+  810  vim a_client.py 
+  811  python a_client.py 
+  812  vim a_client.py 
+  813  python a_client.py 
+  814  vim a_client.py 
+  815  python a_client.py 
+  816  vim a_client.py 
+  817  python a_client.py 
+  818  vim a_client.py 
+  819  python a_client.py 
+  820  vim a_client.py 
+  821  yum install python3
+  822  vim a_client.py 
+  823  yum install python3
+  824  vim a_client.py 
+  825  python a_client.py
+  826  vim a_client.py 
+  827  python a_client.py
+  828  vim a_client.py 
+  829  python a_client.py
+  830  vim a_client.py 
+  831  python a_client.py
+  832  vim a_client.py 
+  833  python a_client.py
+  834  vim a_client.py 
+  835  python a_client.py
+  836  vim a_client.py 
+  837  python a_client.py
+  838  vim a_client.py 
+  839  python a_client.py
+  840  vim a_client.py 
+  841  python a_client.py
+  842  vim a_client.py 
+  843  python a_client.py
+  844  ls
+  845  pwd
+  846  python a_client.py
+  847  yum install mailx 
+  848  dmesg | grep eth1
+  849  ls
+  850  cd thrift
+  851  ls
+  852  cp a.thrift  /home/work/Dean/Language/ 
+  853  cp a_*  /home/work/Dean/Language/ 
+  854  cp gen-py/  /home/work/Dean/Language/ 
+  855  cp gen-py/  /home/work/Dean/Language/  -r
+  856  chown work.work -R /home/work/
+  857  su - work
+  858  docker -i
+  859  docker --help
+  860  docker 
+  861  docker pull -h
+  862  docker pull --help
+  863  docker pull centos
+  864  cat /etc/issue
+  865  yum install bash-completion
+  866  exit
+  867  yum install docker
+  868  yum search docker
+  869  yum install docker-io
+  870  rpm -e docker
+  871  yum install docker-io
+  872  systemctl restart docker
+  873  docker 
+  874  docker pull centos
+  875  docker run centos:centos7 
+  876  docker run centos:centos7 ls
+  877  docker run -h
+  878  docker run -d nc -l
+  879  docker run -d  centos nc -l
+  880  docker ps
+  881  docker ps -a
+  882  docker ps
+  883  docker ps -a
+  884  docker ps -h
+  885  docker ps -a
+  886  docker 
+  887  docker start 1f6fd90c600d 
+  888  docker start 533f1d6a21a4 
+  889  docker ps -a
+  890  docker ps
+  891  docker 
+  892  docker run centos:latest -d -i nc -l -p 1234
+  893  docker run centos:latest -d -i ping 127.1
+  894  docker run -d -i centos:latest ping 127.1
+  895  docker ps
+  896  docker ps -a
+  897  docker run -d -i centos:latest ls
+  898  docker ps -a
+  899  docker run -d -i centos:latest pwd
+  900* docker run centos:latest
+  901  docker run -i centos:latest ping
+  902  docker run -i centos:latest which ping
+  903  docker run -i centos:latest ls /bin
+  904  docker run -i centos:latest bash
+  905  docker 
+  906  docker run -i centos:latest ls
+  907  docker run -i centos:latest python
+  908  docker run -i centos:latest ls
+  909  docker run -h
+  910  docker run -i centos:latest yum install nc
+  911  docker -v
+  912  docker run -i centos:latest yum -y install nc
+  913  docker run -i centos:latest bash
+  914  docker run -t -i centos:latest bash
+  915  docker run -h
+  916  docker run -i -t centos:latest bash
+  917  docker ps 
+  918  docker -h
+  919  ifconfig
+  920  docker -h
+  921  docker 
+  922  docker attach -h
+  923  docker attach kickass_mestorf 
+  924  nc -vvvv 192.168.42.23 1234
+  925  yum install nc
+  926  nc -vvvv 192.168.42.23 1234
+  927  docker ps 
+  928  docker attach kickass_mestorf 
+  929  docker 
+  930  docker port
+  931  docker ps
+  932  docker port 3fb0ed030951 1234
+  933  docker port 3fb0ed030951 
+  934  docker
+  935  docker rm *
+  936  docker rm 1f6fd90c600d 317c85d10c05
+  937  docker ps -a
+  938  docker ps 
+  939  docker kill 3fb0ed030951 
+  940  docker ps 
+  941  docker ps -a
+  942  docker rm 533f1d6a21a4 902ef6edd074 49373d0f54dd cc1c1cc8fae2 
+  943  docker ps -a
+  944  docker rm 9a5fa87679a4 5d47aa7a2dfd df055f2747c6 b16eeb449434 e2d23f880069 ee20baee9f06 f0741fc6e3e8 a45d1ed41df5 949f04ecc9dd 5368965b286e 
+  945  docker ps -a
+  946  docker rm 8ab265c4490d 46fcca067988 fc0aa665c46b 3fb0ed030951 
+  947  docker run -h
+  948  docker run -P centos:latest nc -l -p 1234
+  949  docker run -d -P centos:latest /usr/bin/nc -l -p 1234
+  950  docker -p
+  951  docker ps
+  952  docker ps -a
+  953  docker rm 3e19fa08296b 05788abe10cd 
+  954  docker run centos:latest which nc
+  955  docker run -P -i -t centos:latest bash
+  956  docker run -P -i -t centos:latest /bin/bash
+  957  docker run -i -t centos:latest /bin/bash
+  958  docker -h
+  959  docker commit
+  960  docker ps
+  961  docker stop c45fff0027fe 
+  962  docker commit c45fff0027fe cccc
+  963  docker images
+  964  docker run -i -t cccc nc -l -p 1234
+  965  docker run -P -d cccc nc -l -p 1234
+  966  docker ps
+  967  nc -vvvv 127.1 1234 
+  968  iptables -L -t nat
+  969  ps -ef
+  970  ps -ef|grep nc
+  971  nc 127.1 1234
+  972  nc 127.0.0.1 1234
+  973  nc -vvv 127.0.0.1 1234
+  974  docker
+  975  docker ps
+  976  docker kill 7c15e5bebc50 
+  977  docker ps
+  978  docker ps -a
+  979  history > hist
+  980  > hist
+  981  history >> hist 
+  982  ls
+  983  less hist 
+  984  ls
+  985  docker  ps -a
+  986  ps aux | grep nc
+  987  docker  start 7c15e5bebc50
+  988  ps aux | grep nc
+  989  nc -vvv 127.0.0.1 1234
+  990  ps aux | grep nc
+  991  ifconfig
+  992  nc 10.26.201.31 1234
+  993  nc -vvv 10.26.201.31 1234
+  994  ps -ef
+  995  ps -ef |grep nc
+  996  docker ps -a
+  997  docker stop 7c15e5bebc50 
+  998  nc -l -p 1234
+  999  bg
+ 1000  nc 127.1 1234
+ 1001  fg
+ 1002  docker run -p 1234:1234 -d cccc nc -l -p 1234
+ 1003  docker ps
+ 1004  nc 127.1 1234
+ 1005  docker ps
+ 1006  docker run -p 1234:1234 -d cccc nc -l -p 1234
+ 1007  hostname -i
+ 1008  docker ps
+ 1009  docker run -p 1234:1234 -d cccc nc -l -p 1234
+ 1010  docker  ps a
+ 1011  docker  ps -a
+ 1012  docker start 78f9da4f3d92
+ 1013  docker  ps -a
+ 1014  docker  ps
+ 1015  iptables -F
+ 1016  docker  ps
+ 1017  docker  ps -a
+ 1018  
+ 1019  docker start 78f9da4f3d92
+ 1020  nc 127.1 1234
+ 1021  docker start 78f9da4f3d92
+ 1022  docker  ps -a
+ 1023  docker  ps 
+ 1024  docker run -p 1234:1234 -d cccc nc -l -p 1234 < /etc/issue
+ 1025  docker  ps 
+ 1026  docker run -p 1234:1234 -d cccc nc -l -p 1234 
+ 1027  docker  ps 
+ 1028  docker run -p 1234:1234 -d cccc nc -l -p 1234 < /etc/issue
+ 1029  docker run -p 1234:1234 -d cccc sh -c "nc -l -p 1234 < /etc/issue"
+ 1030  history 
+ 1031  history  > hist 

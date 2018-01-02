@@ -8,3 +8,5 @@ Into
 -------
 
 airdb docs 更多的是偏向技术的实践, 技术产品，学习文档等。
+
+Just for fun
