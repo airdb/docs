@@ -1,0 +1,333 @@
+# lighttpd configuration file
+############ Options you really have to take care of ####################
+
+## modules to load
+# at least mod_access and mod_accesslog should be loaded
+# all other module should only be loaded if really neccesary
+# - saves some time
+# - saves memory
+server.modules              = (
+#                               "mod_rewrite",
+#                               "mod_redirect",
+#                               "mod_alias",
+                               "mod_access",
+                    "mod_cache", # add
+#                               "mod_cml",
+#                               "mod_trigger_b4_dl",
+#                               "mod_auth",
+#                               "mod_status",
+#                               "mod_setenv",
+#                               "mod_fastcgi",
+                               "mod_proxy",
+#                               "mod_simple_vhost",
+#                               "mod_evhost",
+#                               "mod_userdir",
+#                               "mod_cgi",
+                               "mod_compress",
+                    "mod_mem_cache", #add
+#                               "mod_ssi",
+#                               "mod_usertrack",
+#                               "mod_expire",
+                               "mod_secdownload",
+                    "mod_flv_streaming",#add
+#                               "mod_rrdtool",
+                                "mod_accesslog" )
+######------------------- cjj add 2008.8.15 b ----------------------######
+# tarting with lighttpd 1.4.0 three default modules are loaded automatically:
+#        * mod_indexfile
+#        * mod_dirlisting
+#        * mod_staticfile
+######------------------------end-----------------------------------######
+
+## a static document-root, for virtual-hosting take look at the
+## server.virtual-* options
+server.document-root        = "/srv/www/www.uuwatch.com"
+
+## where to send error-messages to
+server.errorlog             = "/var/log/lighttpd/error.log"
+
+# files to check for if .../ is requested
+index-file.names            = ( "index.jsp", "index.html",
+                                "index.htm", "default.htm" )
+
+## set the event-handler (read the performance section in the manual)
+# server.event-handler = "freebsd-kqueue" # needed on OS X
+######--------------------- cjj 2008.8.15 b -----------------------######
+# 事件处理
+#http://trac.lighttpd.net/trac/wiki/server.event-handlerDetails
+#对于linux kernel 2.6来说,没有别的可说 加上这一句足矣
+server.event-handler = "linux-sysepoll"
+######------------------------end-----------------------------------######
+
+######------------------cjj add 2008-8.15 b ------------------------######
+##为什么file handles 要多于 connections?
+##The other file handles are used for fastcgi and/or files,所以我们设置如下:
+server.max-fds = 4096
+server.max-connections = 2048 #最大连接数设置,默认1024
+#max-connection=mad-fds/2(mybe /3)
+######------------------------end-----------------------------------######
+
+######------------------ cjj add 2008.8.15 b -----------------------######
+###defaults:
+##server.max-keep-alive-requests = 16
+##server.max-keep-alive-idle = 5
+##server.max-read-idle = 60
+##server.max-write-idle = 360
+###
+server.max-keep-alive-requests = 0
+server.network-backend = "linux-sendfile"
+######------------------------end-----------------------------------######
+
+# mimetype mapping
+mimetype.assign             = (
+".pdf"          =>      "application/pdf",
+".sig"          =>      "application/pgp-signature",
+".spl"          =>      "application/futuresplash",
+".class"        =>      "application/octet-stream",
+".ps"           =>      "application/postscript",
+".torrent"      =>      "application/x-bittorrent",
+".dvi"          =>      "application/x-dvi",
+".gz"           =>      "application/x-gzip",
+".pac"          =>      "application/x-ns-proxy-autoconfig",
+".swf"          =>      "application/x-shockwave-flash",
+".tar.gz"       =>      "application/x-tgz",
+".tgz"          =>      "application/x-tgz",
+".tar"          =>      "application/x-tar",
+".zip"          =>      "application/zip",
+".mp3"          =>      "audio/mpeg",
+".m3u"          =>      "audio/x-mpegurl",
+".wma"          =>      "audio/x-ms-wma",
+".wax"          =>      "audio/x-ms-wax",
+".ogg"          =>      "application/ogg",
+".wav"          =>      "audio/x-wav",
+".gif"          =>      "image/gif",
+".jar"          =>      "application/x-java-archive",
+".jpg"          =>      "image/jpeg",
+".jpeg"         =>      "image/jpeg",
+".png"          =>      "image/png",
+".xbm"          =>      "image/x-xbitmap",
+".xpm"          =>      "image/x-xpixmap",
+".xwd"          =>      "image/x-xwindowdump",
+".css"          =>      "text/css",
+".html"         =>      "text/html",
+".htm"          =>      "text/html",
+".js"           =>      "text/javascript",
+".asc"          =>      "text/plain",
+".c"            =>      "text/plain",
+".cpp"          =>      "text/plain",
+".log"          =>      "text/plain",
+".conf"         =>      "text/plain",
+".text"         =>      "text/plain",
+".txt"          =>      "text/plain",
+".dtd"          =>      "text/xml",
+".xml"          =>      "text/xml",
+".mpeg"         =>      "video/mpeg",
+".mpg"          =>      "video/mpeg",
+".mov"          =>      "video/quicktime",
+".qt"           =>      "video/quicktime",
+".avi"          =>      "video/x-msvideo",
+".asf"          =>      "video/x-ms-asf",
+".asx"          =>      "video/x-ms-asf",
+".wmv"          =>      "video/x-ms-wmv",
+".bz2"          =>      "application/x-bzip",
+".tbz"          =>      "application/x-bzip-compressed-tar",
+".tar.bz2"      =>      "application/x-bzip-compressed-tar",
+# default mime type
+""              =>      "application/octet-stream",
+)
+
+# Use the "Content-Type" extended attribute to obtain mime type if possible
+#mimetype.use-xattr        = "enable"
+
+
+## send a different Server: header
+## be nice and keep it at lighttpd
+# server.tag                 = "lighttpd"
+
+#### accesslog module
+accesslog.filename          = "/var/log/lighttpd/access.log"
+
+## deny access the file-extensions
+#
+# ~    is for backupfiles from vi, emacs, joe, ...
+# .inc is often used for code includes which should in general not be part
+#      of the document-root
+url.access-deny             = ( "~", ".inc" )
+
+$HTTP["url"] =~ "\.pdf$" {
+server.range-requests = "disable"
+}
+
+##
+# which extensions should not be handle via static-file transfer
+#
+# .php, .pl, .fcgi are most often handled by mod_fastcgi or mod_cgi
+static-file.exclude-extensions = ( ".php", ".pl", ".fcgi" )
+
+######### Options that are good to be but not neccesary to be changed #######
+
+## bind to port (default: 80)
+server.port                = 80
+
+## bind to localhost (default: all interfaces)
+server.bind                = "192.168.0.128"
+
+## error-handler for status 404
+#server.error-handler-404   = "/error-handler.html"
+#server.error-handler-404   = "/error-handler.php"
+
+## to help the rc.scripts
+#server.pid-file            = "/var/run/lighttpd.pid"
+
+
+###### virtual hosts
+##
+## If you want name-based virtual hosting add the next three settings and load
+## mod_simple_vhost
+##
+## document-root =
+##   virtual-server-root + virtual-server-default-host + virtual-server-docroot
+## or
+##   virtual-server-root + http-host + virtual-server-docroot
+##
+#simple-vhost.server-root   = "/srv/www/vhosts/"
+#simple-vhost.default-host = "www.example.org"
+#simple-vhost.document-root = "/htdocs/"
+
+
+######------------------- cjj 2008.8.15 b ------------------------#######
+## 错误转向统一处理
+## Format: <errorfile-prefix><status-code>.html
+## -> ..../status-404.html for 'File not found'
+#server.errorfile-prefix    = "/usr/share/lighttpd/errors/status-"
+#server.errorfile-prefix    = "/srv/www/errors/status-"
+
+#create static pages for your error handling in directory /srv/www/yoursite/htdocs/errors.
+#Based on the above entry you must name your files status-(status-code).html 如:404.html,500.html
+server.errorfile-prefix    = "/srv/www/www.uuwatch.com/errors/status-"
+######------------------------end-----------------------------------######
+
+## virtual directory listings
+dir-listing.activate       = "enable" #允许列表,一般不允许,default:disable
+dir-listing.encoding = "utf-8" #add 编码,不加没啥影响,因为列表一般是禁用的,default:ISO-8859-1,
+######
+####### If the URL is like ^/download/ then enable/disable dir-listing
+$HTTP["url"] =~ "^/download/" {
+dir-listing.activate = "enable"
+}
+
+######------------------cjj add 2008.8.15---------------------------######
+#lighttpd can utilize FAM/Gamin to cache stat call.
+#possible values are: disable, simple or fam.
+server.stat-cache-engine = "simple"
+
+#defaults to /var/tmp as we assume it is a local harddisk
+#server.upload-dirs = "/var/tmp"
+
+#if you have multiple lighttpd servers serving static content then you should use
+#Otherwise you will generate lesser number of 304 responses
+etag.use-inode = "disable"
+#default "enable"
+######------------------------end-----------------------------------######
+
+## enable debugging
+#debug.log-request-header   = "enable"
+#debug.log-response-header = "enable"
+#debug.log-request-handling = "enable"
+#debug.log-file-not-found   = "enable"
+
+### only root can use these options
+#
+# chroot() to directory (default: no chroot() )
+#server.chroot              = "/"
+
+## change uid to <uid> (default: don't care)
+#server.username            = "wwwrun"
+
+## change uid to <uid> (default: don't care)
+#server.groupname           = "wwwrun"
+
+######--------------------------- cjj add 2008.8.18 c -----------------------------######
+####cache module
+cache.support-queries = "enable" #ignore '?' in url
+cache.bases = ("/var/cache/lighttpd/data1","/var/cache/lighttpd/data2") #write cached files in /data/cache directory
+cache.enable="enable"
+#$HTTP["host"]=="video.example.org"{cache.enable=enable}
+cache.refresh-pattern = (
+    "/$" => "5 update-on-refresh no-expire-header", # update homepage every 5 minutes and on refresh requests without setting expire headers
+    "\.(?i)(flv)$" => "0 fetchall-for-range-request flv-streaming", # to work with mod_flv_streaming for flv files
+    "\.(?i)(js|css|xml)$" => "240", # update js/css/xml every 4 hours and on refresh requests
+    "\.(?i)(htm|html|shtml)$" => "30", # update html/htm/shtml every 30 minutes and on refresh requests
+    "\.(?i)(jpg|bmp|jpeg|gif|png)$" => "2880", # update graphics files every 2 days
+    "\.(?i)(rar|zip|wmv|avi|mp3|ape|rm|mpeg|mpg|wma|asf|rmvb|flv)$" => "0 fetchall-for-range-request", # cache media file forever
+    "." => "30 update-on-refresh" # default to update every 30 minutes and on refresh requests
+)
+#mod_proxy_core setting, config your backend servers here
+proxy-core.backends = ( "192.168.0.128:80", "192.168.0.128:80")
+proxy-core.balancer = "round-robin" # or "sqf" or "carp"
+proxy-core.protocol = "http"
+#it's important to enable proxy-core.worked-with-modcache,
+# or mod_proxy_core will not cooperate with mod-cache
+proxy-core.worked-with-modcache = "enable"
+######----------------------------------end-------------------------------------------######
+
+########-------------------------------cjj 2008.8.15 ---------------------------------######
+#### compress module
+compress.cache-dir         = "/var/cache/lighttpd/compress/"
+compress.filetype          = ("text/plain", "text/html","text/javascript","text/css","text/xml")
+######-------------------------------------end----------------------------------------######
+
+######----------------------------------cjj add 2008.8.18-----------------------------######
+#### mem_cache module
+mem-cache.filetypes=("application/x-javascript", "text/css", "text/html", "text/javascript")
+##maxium memory in Mbytes mod-mem-cache can use. default 512 Megabytes
+mem-cache.max-memory = 1024
+##maxium file size in Kbytes of single file to cache in memory. Default: 512 (means 512 ''Kilobytes'').
+mem-cache.max-file-size = 1024
+##number of cached memory items to remove when used memory reached maxmemory by LRU algorthim.Default 200
+mem-cache.lru-remove-count = 1000
+##memory cache's expire time in minutes.Default: 0 (means to check file update for every request)
+mem-cache.expire-time     =    1440 # 1 day
+######-------------------------------------end----------------------------------------######
+
+######----------------------------------cjj add 2008.8.18-----------------------------######
+#### proxy module
+## read proxy.txt for more info 使用proxy,cache模块才起作用
+$HTTP["url"]=~".jsp|.do|/"{
+    proxy.balance="fair"
+    proxy.server=("/" =>(
+                ("host" => "192.168.0.3")
+                #("host" => "122.200.97.146")
+            )
+   
+    )
+}
+##default:
+#proxy.server               = ( ".jsp" =>
+#                               ( "localhost" =>
+#                                 (
+#                                   "host" => "192.168.0.128",
+#                                   "port" => 80
+#                                 )
+#                               )
+#                             )
+##均衡 example
+#$HTTP["host"] == "local.www.uuwatch.com" {
+#    proxy.balance = "hash"
+#    proxy.server = ( "/" => (
+#                    ( "host" => "192.168.0.125" ),
+#                                  ( "host" => "192.168.0.132" )                  
+#                                    )
+#            )
+# }
+######-------------------------------------end----------------------------------------######
+
+######----------------------------------cjj add 2008.8.19 b---------------------------######
+## mod_secdownload
+##URL has to have the format:<uri-prefix>/<token>/<timestamp-in-hex>/<rel-path>
+##<token>=MD5(secret.filename.time)
+secdownload.secret          = "cjj"
+secdownload.document-root   = "/srv/www/download/"
+secdownload.uri-prefix      = "/dl/"        #default : /
+secdownload.timeout         = 0        #default : 60(s),0好像是无限需要进一步验证
+######-------------------------------------end----------------------------------------######
