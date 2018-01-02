@@ -1,4 +1,0 @@
-rsync -aqzH  --delete rsync://ftp.iij.ad.jp/centos/          /data
-rsync -aqzH  --delete rsync://mirrors.kernel.org/centos/     /data
-rsync -aqzH  --delete rsync://mirror.nexicom.net/Fedora-EPEL /data
-rsync -aqzH  --delete rsync://ftp.riken.jp/fedora/epel       /data

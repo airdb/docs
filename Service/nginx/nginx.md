@@ -1,4 +1,0 @@
-Nginx
-===
-
-http://nginx.org/
