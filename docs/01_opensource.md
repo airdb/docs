@@ -1,6 +1,11 @@
 Configuring sources
 ===================
 
+First Header | Second Header | Third Header
+:----------- | :-----------: | -----------:
+Left         | Center        | Right
+Left         | Center        | Right
+
 Heapster can get data from multiple sources (although at this moment we support only one kind - Kubernetes).
 They are specified in the command line via the `--source` flag. The flag takes an argument of the form `PREFIX:CONFIG[?OPTIONS]`.
 Options (optional!) are specified as URL query parameters, separated by `&` as normal.
