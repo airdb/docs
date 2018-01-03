@@ -1,8 +1,8 @@
 如何参与贡献:
 ========================
 
-- Github 提交 PR, 地址: github.com/airdb/docs
-- Github 提交 issues, 地址: github.com/airdb/docs/issues
+- Github 提交 PR, 地址: github.com/airdb/fun
+- Github 提交 issues, 地址: github.com/airdb/fun/issues
 - 写邮件给 info@airdb.com
 
 Github 如何提交 PR
@@ -14,15 +14,15 @@ Github 如何提交 PR
 
 - step 2:
 
-  clone 代码到本地 git clone github.com/airdb/docs
+  clone 代码到本地 git clone github.com/airdb/fun
 
 - step 3:
 
   检查当前 Git Repository
 
     git remote  -v
-    origin    https://github.com/airdb/docs (fetch)
-    origin    https://github.com/airdb/docs (push)
+    origin    https://github.com/airdb/fun (fetch)
+    origin    https://github.com/airdb/fun (push)
 
 - step 4:
 
