@@ -2,7 +2,8 @@ site_name: airdb
 theme: readthedocs
 pages:
 - Overview: index.md
-- 开源软件: ci.md
+- 持续集成: ci.md
+- 持续部署: cd.md
 - SRE文化: sre.md
 - 实践: 02_practice.md
 - 公益:  forfun.md
