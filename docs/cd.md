@@ -1,4 +1,4 @@
-Continuous Integration (持续集成)
+Continuous Deploy (持续部署)
 ===================
 
 First Header | Second Header | Third Header
