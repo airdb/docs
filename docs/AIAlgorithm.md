@@ -18,6 +18,7 @@
   朴素贝叶斯分类
   https://www.zhihu.com/question/27306416
 
+
 ## 算法模型
 回归算法
 
@@ -121,3 +122,5 @@
         推荐系统
         强化学习
         迁移学习
+
+[来源](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/)
