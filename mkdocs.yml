@@ -5,6 +5,7 @@ pages:
 - 持续集成: ci.md
 - 持续部署: cd.md
 - 机器学习: AIAlgorithm.md
+- 职业生涯: career.md
 - SRE文化: sre.md
 - 实践: 02_practice.md
 - 公益:  forfun.md
