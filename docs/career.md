@@ -20,7 +20,7 @@ Career (职业生涯)
 一般完整的胜任力工具包括了各职业及某职业中不同级别的胜任力标准。如果没有相应标准，可由该职业工作人员和人力资源专家帮助完成该项标准的评定。确要明确的是，为了确保评价的客观性，应该同时由该职业工作人员和人力资源专家为该职业的不同级别和测试个人评分。
 
 四、两项评价完成后，可以得出以下雷达图。
-[RadarMap](RadarMap.jpg)
+![RadarMap](RadarMap.jpg)
 
 [RadarMap](http://fun.airdb.com/zh/latest/RadarMap.jpg)
 
