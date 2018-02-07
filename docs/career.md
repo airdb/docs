@@ -22,8 +22,6 @@ Career (职业生涯)
 四、两项评价完成后，可以得出以下雷达图。
 ![RadarMap](RadarMap.jpg)
 
-[RadarMap](http://fun.airdb.com/zh/latest/RadarMap.jpg)
-
 从图中，可以很直观地发现，个人与职业要求相匹配的能力差距有多大。一般来说，单项指标的能力差距越大，则该指标越应该引起重视。
 
 五、分析
