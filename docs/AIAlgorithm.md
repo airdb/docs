@@ -124,3 +124,8 @@
         迁移学习
 
 [来源](https://github.com/KeKe-Li/tutorial/blob/master/assets/src/)
+
+
+## 入门文档
+
+[十大经典算法入门](http://mp.weixin.qq.com/s/fqjFjxwRwrDJ0JFAkHuZlA)
