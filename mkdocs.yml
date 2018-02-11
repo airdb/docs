@@ -4,6 +4,7 @@ pages:
 - Overview: index.md
 - 持续集成: ci.md
 - 持续部署: cd.md
+- AWS: aws/awscli.md
 - 机器学习: AIAlgorithm.md
 - 职业生涯: career.md
 - SRE文化: sre.md
