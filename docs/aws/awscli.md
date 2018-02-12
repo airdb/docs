@@ -1,7 +1,7 @@
-Aws cli Common Use
+AWS cli Common Use
 ==================
 
-# lambda 
+# Lambda 
 查询 lambda
 
     [work@iz624k8ymw3z.airdb.com ~]$ aws lambda  list-functions --query Functions[].FunctionName
@@ -13,8 +13,8 @@ Aws cli Common Use
 
 上传代码
 
-    [work@iz624k8ymw3z.airdb.com ~] go build main.go
-    [work@iz624k8ymw3z.airdb.com ~] zip main.zip main
+    [work@iz624k8ymw3z.airdb.com ~]$ go build main.go
+    [work@iz624k8ymw3z.airdb.com ~]$ zip main.zip main
     [work@iz624k8ymw3z.airdb.com ~]$ aws lambda   update-function-code  --function-name HelloGo --zip-file fileb://main.zip
 
 
@@ -27,12 +27,14 @@ Aws cli Common Use
     aws cloudformation  validate-template --template-body  file://relay.template 
 
 
+# CloudFormation
 创建 cloudformation
 
     aws cloudformation  create-stack --stack-name relay   --template-body  file://relay.template
     aws cloudformation  create-stack --stack-name relay   --template-url  https://s3.amazonaws.com/airdb.me/aws/cloudformation/relay.template
 
 更新 stack
+
     aws cloudformation  update-stack  --stack-name  relay  --template-body  file://relay.template
 
 查看 stack 部署的资源
