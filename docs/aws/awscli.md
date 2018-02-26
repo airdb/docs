@@ -28,7 +28,7 @@ AWS cli Common Use
 
 
 # CloudFormation
-创建 cloudformation
+创建cloudformation [示例](https://docs.aws.amazon.com/zh_cn/AWSCloudFormation/latest/UserGuide/sample-templates-services-ap-southeast-1.html)
 
     aws cloudformation  create-stack --stack-name relay   --template-body  file://relay.template
     aws cloudformation  create-stack --stack-name relay   --template-url  https://s3.amazonaws.com/airdb.me/aws/cloudformation/relay.template
