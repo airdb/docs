@@ -40,3 +40,8 @@ AWS cli Common Use
 查看 stack 部署的资源
 
     aws cloudformation   list-stack-resources   --stack-name   relay
+
+
+查看本机实例 ID
+
+    curl http://169.254.169.254/latest/meta-data/instance-id
