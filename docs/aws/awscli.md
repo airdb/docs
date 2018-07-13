@@ -45,3 +45,14 @@ AWS cli Common Use
 查看本机实例 ID
 
     curl http://169.254.169.254/latest/meta-data/instance-id
+
+
+
+查看 Lambda 日志
+aws logs describe-log-groups
+
+aws logs describe-log-streams --log-group-name /aws/lambda/baobeihuijia
+
+aws logs describe-log-streams --log-group-name /aws/lambda/baobeihuijia --order-by LastEventTime
+
+aws logs get-log-events --log-group-name /aws/lambda/baobeihuijia --log-stream-name '2018/07/13/[$LATEST]f10df32188aa435fafa0a8b7ee4995ab'
