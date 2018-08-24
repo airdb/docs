@@ -7,7 +7,7 @@ pages:
 - 概览: index.md
 - 技术公益: lovelytech.md
 - 守护者: Maintainers.md
-- 维护项目: 
+- 维护项目: project/index.md
         - '宝贝回家': project/bbhj.airdb.io.md
 - 持续集成: ci.md
 - 持续部署: cd.md
