@@ -12,11 +12,11 @@
 
 ## YiNo Team
 
-[Members](https://github.com/orgs/bbhj/people) :
+[1. airdb Members](https://github.com/orgs/airdb/people) :
+* Developer: [Dean](https://github.com/airdb) dean@airdb.com
 
-* Developer: dean@airdb.com  [Dean](https://github.com/airdb)
-
-* Developer: qjnight@gmail.com  [bramblex](https://github.com/bramblex)
+[2. bbhj Members](https://github.com/orgs/bbhj/people) :
+* Developer: [bramblex](https://github.com/bramblex) qjnight@gmail.com  
 
 * Developer: [shih](https://github.com/hallelujah-shih)
 
