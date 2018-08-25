@@ -1,5 +1,6 @@
+## 背景
 
-airdb 是几年前发现的一个词, 至今都没有给它赋予意义。 本想用 [airdb.com](http://airdb.com/index.html) 做些事情，但近几年的趋势、环境都不太好。一直以来想做技术公益与开源，但是无数次的虚拟团队最终都以散伙或沉寂。
+airdb 是几年前发现的一个词, 至今都没有给它赋予意义。 本想用 [airdb](https://github.com/airdb.com) 做些事情，但近几年的趋势、环境都不太好。一直以来想做技术公益与开源，但是无数次的虚拟团队最终都以散伙或沉寂。
 
 金钱、名誉、生活其实对于每一个人都是一生要面对的问题，那些解决了这些问题的人，已经在做自己喜欢做的事了。 但是像我们这样的人呢？ 我坚信更多的人是愿意做一些特别的、有意义的事情，并且技术公益与开源应该是值得去做的！
 
@@ -12,6 +13,4 @@ airdb 是几年前发现的一个词, 至今都没有给它赋予意义。 本�
 
 我不知道，您是不是也有这样的中年危机？如果有，一起从最简单的 Type Keyboard 做起吧！
 
-邮件 &lt;Dean dean@airdb.com&gt;  或点击 [Issues](https://github.com/airdb/fun/issues) 提问。
-
-see [contributing](03_how_to_github_pull_request.md).
+邮件 &lt;Dean dean@airdb.com&gt;  或点击 [Issues](https://github.com/airdb/index/issues) 提问。

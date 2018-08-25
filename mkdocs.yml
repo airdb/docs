@@ -15,15 +15,14 @@ pages:
 - 守护者: Maintainers.md
 - 维护项目: 
         - '宝贝回家': project/bbhj.airdb.io.md
-- 持续集成: ci.md
-- 持续部署: cd.md
-- AWS: aws/awscli.md
-- 机器学习: AIAlgorithm.md
-- 职业生涯: career.md
+#- 持续集成: ci.md
+#- 持续部署: cd.md
+#- AWS: aws/awscli.md
+#- 机器学习: AIAlgorithm.md
+#- 职业生涯: career.md
 - SRE文化: sre.md
-- 实践: 02_practice.md
 - AIFM的想法: aifm.md
-- 关于求职: jobs/salary.md
+#- 关于求职: jobs/salary.md
 - 关于真实: dean/sincere.md
 - 文档贡献: 03_how_to_github_pull_request.md
 - 文档排版: 04_chinese_copywrite_guidelines.md
