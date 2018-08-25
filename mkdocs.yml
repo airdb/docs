@@ -5,7 +5,7 @@ site_author: YiNo Team
 repo_url: https://github.com/airdb
 edit_uri: https://github.com/airdb/index
 
-copyright: Copyright &copy; 2014 <a href="https://github.com/airdb">Dean</a>, Maintained by the YiNo Team</a>.
+copyright: Copyright &copy; 2014 <a href="https://github.com/airdb">Dean</a>, Maintained by the <a href="https://github.com/orgs/airdb/people">YiNo Team</a>.
 
 theme: Flatly
 
