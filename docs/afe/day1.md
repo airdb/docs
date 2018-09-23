@@ -1,4 +1,5 @@
 1. 了解npm 和 vuejs , 使用vuejs 写一段hello world.
+   [NPM 安装及使用](https://www.cnblogs.com/goldlong/p/8027997.html)
    学习地址： [VUE js](https://cn.vuejs.org/v2/guide/)
 
 2. 了解程序员交友最大的网站 github, 注册 github.
