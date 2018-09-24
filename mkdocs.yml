@@ -24,7 +24,7 @@ pages:
         - 'Day 1': afe/day1.md
 - SRE文化: sre.md
 - AIFM的想法: aifm.md
-- MyCql的学习历程: Mycql/StudyDay1.md
+- MyCql的test: MyCql/test.md
 #- 关于求职: jobs/salary.md
 - 关于真实: dean/sincere.md
 - 文档贡献: 03_how_to_github_pull_request.md
