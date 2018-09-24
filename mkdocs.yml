@@ -20,6 +20,8 @@ pages:
 #- AWS: aws/awscli.md
 #- 机器学习: AIAlgorithm.md
 #- 职业生涯: career.md
+- 'AFE 快速入门': 
+        - 'Day 1': afe/day1.md
 - SRE文化: sre.md
 - AIFM的想法: aifm.md
 - MyCql的学习历程: Mycql/StudyDay1.md
